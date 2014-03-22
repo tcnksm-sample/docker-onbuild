@@ -1,0 +1,3 @@
+FROM ubuntu
+
+ONBUILD RUN echo "See you later"
