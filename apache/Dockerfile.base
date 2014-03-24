@@ -7,7 +7,7 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 
-ONBUILD ADD ./htdocs /var/www/
+ONBUILD ADD . /var/www/
 
 EXPOSE 80
 ENTRYPOINT ["/usr/sbin/apache2"]
